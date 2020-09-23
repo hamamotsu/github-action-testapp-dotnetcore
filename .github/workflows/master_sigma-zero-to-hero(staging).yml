@@ -29,7 +29,7 @@ jobs:
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'sigma-zero-to-hero(staging)'
+        app-name: 'sigma-zero-to-hero'
         slot-name: 'staging'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_6affacb1f0f74dd584a06da971ce01ea }}
         package: ${{env.DOTNET_ROOT}}/myapp 
